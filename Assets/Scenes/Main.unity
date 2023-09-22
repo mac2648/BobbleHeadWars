@@ -694,6 +694,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4868682213744696652, guid: 4658ae5577de34c428b7e87d0137f0bf, type: 3}
   m_PrefabInstance: {fileID: 1015988733}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1097128995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097128996}
+  m_Layer: 0
+  m_Name: Launcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1097128996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097128995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1346714152}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135820225
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +994,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56de7fbd4b238774eaab6e6c6b5de641, type: 3}
   m_PrefabInstance: {fileID: 1346714150}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1346714152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5639509622783464918, guid: 56de7fbd4b238774eaab6e6c6b5de641, type: 3}
+  m_PrefabInstance: {fileID: 1346714150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1346714153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 56de7fbd4b238774eaab6e6c6b5de641, type: 3}
+  m_PrefabInstance: {fileID: 1346714150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346714154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346714153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b67a410af6aa8488eae66ca51f597b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2348088305609324663, guid: f69d987d6a12a12478fa176456e5ba4b, type: 3}
+  launchPosition: {fileID: 1097128996}
 --- !u!1 &1508760446
 GameObject:
   m_ObjectHideFlags: 0
