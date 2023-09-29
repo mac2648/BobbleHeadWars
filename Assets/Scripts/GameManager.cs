@@ -29,19 +29,16 @@ public class GameManager : MonoBehaviour
 
         if (currentSpawnTime > generatedSpawnTime)
         {
-            //Debug.Log("entered first if");
             currentSpawnTime = 0;
 
             generatedSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
 
             if (aliensPerSpawn > 0 && aliensOnScreen < totalAliens)
             {
-                Debug.Log("entered second if");
                 List<int> previousSpawnLocations = new List<int>();
 
                 if (aliensPerSpawn > spawnPoints.Length)
                 {
-                    Debug.Log("entered thrid if");
                     aliensPerSpawn = spawnPoints.Length - 1;
                 }
 
