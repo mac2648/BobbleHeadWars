@@ -770,7 +770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135820225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1175494, y: 18.887999, z: 14.72}
+  m_LocalPosition: {x: -5.1175494, y: 19.64, z: 14.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -807,8 +807,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 11.08
-  m_Radius: 2.5
+  m_Height: 11.5
+  m_Radius: 2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1860,11 +1860,11 @@ MonoBehaviour:
   - {fileID: 1508760446}
   - {fileID: 1831554963}
   alien: {fileID: 4851588773497737427, guid: 9c5e22ed8bafd964299dbdc02a5827db, type: 3}
-  maxAliensOnScreen: 10
-  totalAliens: 10
+  maxAliensOnScreen: 50
+  totalAliens: 50
   minSpawnTime: 0
   maxSpawnTime: 3
-  aliensPerSpawn: 1
+  aliensPerSpawn: 3
 --- !u!4 &1748884668
 Transform:
   m_ObjectHideFlags: 0

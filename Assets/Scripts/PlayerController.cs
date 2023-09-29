@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         if (moveDirection == Vector3.zero)
         {
+            //solution for now
+            GetComponent<CharacterController>().SimpleMove(moveDirection * moveSpeed);
+            
             // TODO
         }
         else
