@@ -7,6 +7,8 @@ using UnityEngine.Events;
 
 public class Alien : MonoBehaviour
 {
+    private DeathParticles deathParticles;
+
     public Transform target;
     public float navigationUpdate;
     private float navigationTime = 0;
@@ -41,7 +43,6 @@ public class Alien : MonoBehaviour
         if (isAlive)
         {
             Die();
-            SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
         }
     }
 
@@ -57,11 +58,24 @@ public class Alien : MonoBehaviour
 
         head.GetComponent<SelfDestruct>().Initiate();
 
+        if (deathParticles)
+        {
+            deathParticles.transform.parent = null;
+            deathParticles.Activate();
+        }
+
         OnDestroy.Invoke();
         OnDestroy.RemoveAllListeners();
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
         Destroy(gameObject);
     }
 
-
+    public DeathParticles GetDeathParticles()
+    {
+        if (deathParticles == null)
+        {
+            deathParticles = GetComponentInChildren<DeathParticles>();
+        }
+        return deathParticles;
+    }
 }

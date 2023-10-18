@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private bool spawnedUpgrade = false;
     private float actualUpgradeTime = 0;
     private float currentUpgradeTime = 0;
+    public GameObject deathFloor;
 
     private int aliensOnScreen = 0;
     private float generatedSpawnTime = 0;
@@ -128,7 +129,7 @@ public class GameManager : MonoBehaviour
                         newAlien.transform.LookAt(targetRotation);
 
                         alienScript.OnDestroy.AddListener(AlienDestroyed);
-
+                        alienScript.GetDeathParticles().SetDeathFloor(deathFloor);
                     }
                 }
             }

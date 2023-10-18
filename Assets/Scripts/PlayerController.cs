@@ -21,10 +21,13 @@ public class PlayerController : MonoBehaviour
     public Rigidbody marineBody;
     private bool isDead = false;
 
+    private DeathParticles deathParticles;
+
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        deathParticles = gameObject.GetComponentInChildren<DeathParticles>();
     }
 
     // Update is called once per frame
@@ -85,6 +88,7 @@ public class PlayerController : MonoBehaviour
         Alien alien = other.gameObject.GetComponent<Alien>();
         if (alien != null)
         { // 1
+            Debug.Log("should take damage");
             if (!isHit)
             {
                 hitNumber += 1; // 2
@@ -107,6 +111,7 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
+        deathParticles.Activate();
         bodyAnimator.SetBool("IsMoving", false);
         marineBody.transform.parent = null;
         marineBody.isKinematic = false;
