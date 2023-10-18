@@ -1214,7 +1214,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   bodyAnimator: {fileID: 1346714156}
-  hitForce: []
+  hitForce:
+  - 0.1
+  - 0.2
+  - 0.3
 --- !u!143 &1135820228
 CharacterController:
   m_ObjectHideFlags: 0
