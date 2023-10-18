@@ -81,6 +81,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   navigationUpdate: 0.5
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!195 &1017600274
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody head;
     public LayerMask layerMask;
     public Animator bodyAnimator;
+    public float[] hitForce;
 
     private Vector3 currentLookTarget = Vector3.zero;
     private CharacterController characterController;
